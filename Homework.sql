@@ -1,0 +1,8 @@
+-- SELECT * FROM Clienti WHERE Nome = 'Mario';
+-- SELECT Nome, Cognome FROM Clienti WHERE AnnoDiNascita = 1982
+-- SELECT * FROM Fatture WHERE Iva = 20
+-- SELECT * FROM IdProdotto WHERE DataAttivazione >= '01/01/2017' AND DataAttivazione < '01/01/2018' AND (InProduzione = True OR InCommercio = True)
+-- SELECT F.*, C.* FROM Fatture F JOIN Clienti C ON F.IdCliente = C.NumeroCliente WHERE Importo < 1000;
+-- SELECT F.*, P.Denominazione FROM Fatture F JOIN Fornitori P ON F.NumeroFornitore = P.NumeroFornitore;
+-- SELECT EXTRACT(YEAR FROM DataFattura) AS Anno, COUNT(*) FROM Fatture WHERE Iva = 20 GROUP BY Anno;
+-- SELECT EXTRACT(YEAR FROM DataFattura) AS Anno, COUNT(*) AS NumeroFatture, SUM(Importo) AS SommaImporti FROM Fatture GROUP BY Anno;
